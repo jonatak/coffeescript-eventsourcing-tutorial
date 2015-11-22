@@ -3,7 +3,8 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "start": "nodejs es.js"
+        "build": "npm install;bower install;coffee --compile --output dist src",
+        "start": "coffee template.coffee"
     },
     "dependencies": {
         "body-parser": "~1.14.0",
